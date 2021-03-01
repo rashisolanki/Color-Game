@@ -1,0 +1,33 @@
+body{
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+}
+.crc{
+    border-radius: 50%;
+    position: absolute;
+    animation-name: eg;
+    animation-duration: 1s;
+    animation-fill-mode: forwards; 
+    transform: translate(-50%,-50%);
+}
+@keyframes eg{
+    0%{
+        opacity: 0;
+        height: 0;
+        width: 0;
+    }
+    25%{
+        opacity: 1;
+        max-width: 100px;
+        max-height: 100px;
+    }
+    75%{
+        opacity: 1;
+        max-width: 200px;
+        max-height: 200px;
+    }
+    100%{
+        opacity: 0;
+    }
+}
