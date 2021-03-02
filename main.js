@@ -23,3 +23,7 @@ b.onclick = function(event)
 {
       coords(event.clientY,event.clientX);
   };
+
+b.onkeypress = function(){
+    coords();
+};
